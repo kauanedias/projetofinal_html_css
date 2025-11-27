@@ -1,0 +1,226 @@
+.barra-busca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.barra-busca input {
+    width: 55%;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+/* ÍCONES – NA BARRA DE BUSCA */
+.icone {
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.2s;
+}
+
+.icone:hover {
+    transform: scale(1.15);
+}
+
+.icones-esq {
+    display: flex;
+    gap: 15px;
+}
+
+.icones-dir {
+    display: flex;
+    gap: 15px;
+}
+
+.promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background: #f8f6f2;
+    padding: 50px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+.promo-img img {
+    width: 480px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.promo-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.promo-texto h2 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.promo-texto .sub {
+    font-size: 22px;
+    font-weight: 400;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+margin: 0;
+background: #f4ebe3;
+font-family: Arial, sans-serif;
+color: #333;
+}
+
+
+.topo {
+    background: url('imgs/img.webp') center/cover no-repeat;
+    height: 280px;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topo h1 {
+    color: white;
+    font-size: 50px;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+}
+
+
+.barra-busca {
+display: flex;
+justify-content: center;
+margin: 20px 0;
+}
+
+
+
+.barra-busca input {
+width: 70%;
+padding: 12px;
+border-radius: 20px;
+border: 1px solid #ccc;
+}
+
+
+.categorias {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+padding: 20px;
+}
+
+.categorias .cat {
+text-align: center;
+}
+
+.categorias img {
+width: 100%;
+height: 280px;
+object-fit: cover;
+border-radius: 25px;
+}
+
+.categorias p {
+margin-top: 10px;
+font-weight: bold;
+}
+
+.filtros-container {
+    display: flex;
+    gap: 20px;           
+    align-items: center; 
+    
+}
+
+.filtros-container select {
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+}
+
+.rasgado img {
+    width: 100%;
+    mask-image: url('imgs/png02.webp');
+    -webkit-mask-image: url('imgs/png02.webp');
+    mask-size: cover;
+    -webkit-mask-size: cover;
+}
+
+
+.foto-central {
+    height: 300px; 
+    background: url('imgs/fotocentral.jpg') center/cover no-repeat;
+    margin: 0 px;
+}
+
+.pincel {
+    position: absolute;
+    top: 1400px;
+    right: 10px;
+    width: 180px;
+}
+
+.salto {
+    position: absolute;
+    top: 1670px;
+    bottom: 20px;
+    right: 10px;
+    width: 200px;
+}
+
+.bolsa {
+    position: absolute;
+    top: 1500px;
+    left: 0px;
+    width: 250px; 
+    pointer-events: none; 
+}
+
+.frase {
+    position: absolute;
+  top: 299%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #000; 
+  text-align: center;
+  width: 80%; 
+}
+
+@media (max-width: 600px) {
+  /* Aqui dentro você coloca as regras que vão valer no celular */
+  body {
+    background-color: lightpink;
+  }
+
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
